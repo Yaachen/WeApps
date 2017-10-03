@@ -9,6 +9,18 @@
         </block>
       </swiper>
 </view>
-<view class="exhib_items">
-
-</view>
+<scroll-view class="exhibi_body" >
+    <block wx:for="{{exhibiItems}}" >
+      <view class="exhibi_item">
+        <view>
+          <image class="kind_list_img" src="{{item.imgurls}}" ></image>
+        </view>
+        <view class= "e">
+          <view class="exhibi_name" >{{item.name}}</view>
+          <view class="exhibi_dep1">{{item.description1}}</view>
+          <view class="exhibi_dep2">{{item.description2}}</view>
+       
+        </view>
+      </view> 
+      </block>
+</scroll-view>

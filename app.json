@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/index/exhibits/iaa/iaa",
     "pages/logs/logs"
   ],
   "window":{

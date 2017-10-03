@@ -8,6 +8,19 @@ Page({
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    exhibiItems: [
+    {
+      imgurls: "imgs/IAA.png",
+      name: "IAA",
+      description1: "Internationale Automobil-Ausstellung",
+      description2: '法兰克福车展'
+    },{
+      imgurls: "imgs/CEBIT.png",
+      name: "CeBit",
+      description1: "Centrum für Büroautomation, Informationstechnologie und Telekommunikation",
+      description2: "CeBIT 信息及通信技术展"
+    }
     ]   
   },
   //事件处理函数

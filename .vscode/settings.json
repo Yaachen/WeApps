@@ -2,5 +2,6 @@
     "files.associations": {
         "*.wxml": "html",
         "*.wxss": "css"
-    }
+    },
+    "npm.includeDirectories": ["/usr/local/lib/node_modules/npm"]
 }
