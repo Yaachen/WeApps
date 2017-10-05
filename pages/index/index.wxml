@@ -15,7 +15,7 @@
         <view>
           <image class="kind_list_img" src="{{item.imgurls}}" ></image>
         </view>
-        <view class= "e">
+        <view class= "e" id="exhibi_all_des" bindtap="openExhibiItem">
           <view class="exhibi_name" >{{item.name}}</view>
           <view class="exhibi_dep1">{{item.description1}}</view>
           <view class="exhibi_dep2">{{item.description2}}</view>

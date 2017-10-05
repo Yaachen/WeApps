@@ -23,6 +23,10 @@ Page({
     }
     ]   
   },
+
+  openExhibiItem: function (event) {
+    console.log(event)
+  }
   //事件处理函数
   /*
   bindViewTap: function() {
