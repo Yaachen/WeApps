@@ -2,9 +2,9 @@
 
 <view class="swiper_b">
     <swiper indicator-dots="true" autoplay="true" duration="5000" interval="5000">
-        <block wx:for="{{imgUrls}}">
-          <swiper-item  cx-swiper>
-            <image src="{{item}}" class="swiper-item" />
+        <block wx:for="{{[0,1]}}">
+          <swiper-item  cx-swiper bindtap="openExhibiItem" data-item="{{exhibiItems[item]}}">
+            <image src="{{exhibiItems[item].s_imgurls}}" class="swiper-item" />
           </swiper-item>
         </block>
       </swiper>
@@ -15,11 +15,10 @@
         <view>
           <image class="kind_list_img" src="{{item.imgurls}}" ></image>
         </view>
-        <view class= "e" id="exhibi_all_des" bindtap="openExhibiItem">
-          <view class="exhibi_name" >{{item.name}}</view>
+        <view class= "e" id="exhibi_all_des" bindtap="openExhibiItem" data-item="{{item}}">
+          <view class="exhibi_name">{{item.name}}</view>
           <view class="exhibi_dep1">{{item.description1}}</view>
           <view class="exhibi_dep2">{{item.description2}}</view>
-       
         </view>
       </view> 
       </block>

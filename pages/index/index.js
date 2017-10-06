@@ -4,29 +4,38 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ],
     exhibiItems: [
     {
-      imgurls: "imgs/IAA.png",
+      imgurls: "images/IAA.png",
       name: "IAA",
       description1: "Internationale Automobil-Ausstellung",
-      description2: '法兰克福车展'
+      description2: '法兰克福车展',
+      s_imgurls:'images/IAA_M_01.jpg',
+      n_url: "exhibits/iaa/iaa"
     },{
-      imgurls: "imgs/CEBIT.png",
+      imgurls: "images/CEBIT.png",
       name: "CeBit",
-      description1: "Centrum für Büroautomation, Informationstechnologie und Telekommunikation",
-      description2: "CeBIT 信息及通信技术展"
+      description1: "Informationstechnologie und Telekommunikation",
+      description2: "信息及通信技术展",
+      s_imgurls:'images/cebit_M_01.jpg'
     }
     ]   
   },
 
   openExhibiItem: function (event) {
     console.log(event)
-  }
+    wx.navigateTo({
+      url: event.currentTarget.dataset.item.n_url,
+      success:function (res)       
+      {
+        console.log(res.data);
+      },
+      fail: function(res) {
+        console.log(res)
+        console.log(url)
+      }
+    },
+  )},
   //事件处理函数
   /*
   bindViewTap: function() {
