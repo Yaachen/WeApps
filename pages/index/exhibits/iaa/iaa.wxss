@@ -1,0 +1,19 @@
+.exhibi_detail{
+  display: flex;
+  flex-direction: column;
+  border-color: #888888;
+  border-style: solid;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  
+}
+.exhibi_detail_des{
+  border-color: #888888;
+  border-style: solid;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  height: 750rpx;
+  margin: 10rpx 10rpx 10rpx 10rpx
+}
+.iaa_s_image{
+    display: block;
+    margin: auto;
+}
