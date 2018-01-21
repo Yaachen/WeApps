@@ -8,3 +8,11 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+scroll-view{
+  font-size: small;
+}
+
+view{
+  font-size: small;
+}
