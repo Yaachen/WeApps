@@ -2,7 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/index/exhibits/iaa/iaa",
-    "pages/logs/logs"
+    "pages/aboutme/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,8 +15,8 @@
       "pagePath": "pages/index/index",
       "text": "首页"
     }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "pagePath": "pages/aboutme/index",
+      "text": "发布"
     }]
   },
   "networkTimeout": {
