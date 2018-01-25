@@ -5,63 +5,69 @@
 
   <view class="body">
     <form bindsubmit="formSubmit" bindreset="formReset">
-      <view class="formTextInput_V">
-        <input class="inputName" name="input" placeholder="姓名">
+      <view class="formTextInput_S">
+        <label class='formlabel'> 联系人 </label>
+        <input class='forminput' name="input" placeholder="姓名">
         </input>
       </view>
 
-      <view class="formTextInput_V">
-        <input type="inputSName" name="input" placeholder="昵称">
-        </input>
-      </view>
-
-       <view class="section">
-        <input name="input" placeholder="行程描述" />
-      </view>
-
-      <view class="formTextInput_V">
-        <checkbox-group name="checkG1">
+      <view class="formTextInput_S">
+        <label class="formlabel"> 性别 </label>
+        <!--view class ="formradiogender"-->
+        <radio-group class="formradiogender" name="formradiogr">
           <label>
-            有驾照
-            <checkbox value="有驾照"></checkbox>
+            <radio value='man' checked='true' /> 男
           </label>
           <label>
-            拼车
-            <checkbox value="拼车"></checkbox>
+            <radio value='female' /> 女
           </label>
-          <label>
-            拼房
-            <checkbox value="拼房"></checkbox>
-          </label>
-        </checkbox-group>
+        </radio-group>
+        <!--/view-->
       </view>
 
-      <view class="formTextInput_V">
-        <input type="inputSName" placeholder="">
+      <view class="formTextInput_S">
+        <label> 手机 </label>
+        <input name="input" class="forminput" type="number" placeholder="例如： 017545124523">
         </input>
       </view>
-
-      <view class="formTextInput_V">
-        <input type="inputSName" placeholder="">
+      <view class="formTextInput_S">
+        <label> 邮件 </label>
+        <input name="input" class="forminput" type="text" placeholder="例如： hallo@hotmail.com">
         </input>
       </view>
-
-      <view class="weui-cells weui-cells_after-title">
-        <view class="weui-cell weui-cell_input">
-          <view class="weui-cell__hd">
-            <view class="weui-label">出发时间</view>
-          </view>
-          <view class="weui-cell__bd">
-            <picker name="picker" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-              <view class="weui-input">{{date}}</view>
-            </picker>
-          </view>
-        </view>
-      </view>
-      <view class="btn-area">
-        <button formType="submit">提交</button>
-        <button formType="reset">重置</button>
-      </view>
-    </form>
-  </view>
+      <view class="section">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="行程描述" />
 </view>
+       <view class="formPicker_S">
+          <picker name="picker" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+            <view class="weui-input">出发时间 {{date}}</view>
+          </picker>
+        </view>
+        <view class="formTextInput_S">
+          <checkbox-group name="checkG1">
+            <label>
+              有驾照
+              <checkbox value="有驾照"></checkbox>
+            </label>
+            <label>
+              拼车
+              <checkbox value="拼车"></checkbox>
+            </label>
+            <label>
+              拼房
+              <checkbox value="拼房"></checkbox>
+            </label>
+          </checkbox-group>
+        </view>
+
+        <view class="formTextInput_S">
+          <input type="inputSName" placeholder="">
+          </input>
+        </view>
+        <view class="btn-area">
+          <button formType="submit">提交</button>
+          <button formType="reset">重置</button>
+        </view>
+    </form>
+    </view>
+  </view>

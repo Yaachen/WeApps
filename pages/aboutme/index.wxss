@@ -1,4 +1,49 @@
 /**index.wxss**/
+.formPicker_S
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+}
+.formTextInput_S{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+}
+
+.formlabel{
+ border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  width: 50%;
+}
+
+.forminput{
+ border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  width: 50%;
+}
+
+
+.formradiogender{
+   border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  display: flex;
+  flex-direction:  row;
+  justify-content:  flex-start ;
+  width: 50%
+}
+
+
+
 .userinfo {
   display: flex;
   flex-direction: column;
