@@ -35,9 +35,9 @@
         <input name="input" class="forminput" type="text" placeholder="例如： hallo@hotmail.com">
         </input>
       </view>
-      <view class="section">
-  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="行程描述" />
-</view>
+      <view class="formTextarea">
+         <textarea  bindblur="bindTextAreaBlur" auto-height placeholder="行程描述" />
+      </view>
        <view class="formPicker_S">
           <picker name="picker" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
             <view class="weui-input">出发时间 {{date}}</view>

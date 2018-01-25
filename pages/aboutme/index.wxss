@@ -1,4 +1,28 @@
 /**index.wxss**/
+.body{
+
+  border-width: 5rpx 5rpx 5rpx 5rpx;
+  border-color: #888888;
+  border-style: solid;
+  grid-row-gap: 20rpx;
+}
+.head{
+  height: 10%
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.formTextarea{
+
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  height: 100rpx;
+}
+
 .formPicker_S
 {
   display: flex;
