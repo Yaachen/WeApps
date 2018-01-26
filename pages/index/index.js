@@ -19,7 +19,8 @@ Page({
       description2: "信息及通信技术展",
       s_imgurls:'images/cebit_M_01.jpg'
     }
-    ]   
+    ],
+    date: '2016-09-01',   
   },
 
   openExhibiItem: function (event) {

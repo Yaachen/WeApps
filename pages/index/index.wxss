@@ -1,4 +1,23 @@
 /**index.wxss**/
+.main_searchbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100 rpx;
+}
+
+.main_searchbar_time{
+  
+  weight: 100 rpx;
+}
+
+.main_searchbar_loc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100 rpx;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

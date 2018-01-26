@@ -9,6 +9,18 @@
         </block>
       </swiper>
 </view>
+<view class = "main_searchbar">
+  <view class = "main_searchbar_time">
+  <picker name="picker" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+  <view class="weui-input">时间 {{date}}</view>
+</picker>
+</view>
+<view class = "main_searchbar_loca">
+<picker name="picker" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+  <view class="weui-input">时间 {{date}}</view>
+</picker>
+</view>
+</view>
 <scroll-view class="exhibi_body" >
     <block wx:for="{{exhibiItems}}" >
       <view class="exhibi_item">
