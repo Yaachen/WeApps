@@ -2,12 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/index/exhibits/iaa/iaa",
-    "pages/aboutme/index"
+    "pages/aboutme/index",
+    "pages/formsubmit/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "德国展会",
+    "navigationBarTitleText": "Reise Parnter Sucht",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -15,9 +16,13 @@
       "pagePath": "pages/index/index",
       "text": "首页"
     }, {
-      "pagePath": "pages/aboutme/index",
+      "pagePath": "pages/formsubmit/index",
       "text": "发布"
-    }]
+    }, {
+      "pagePath": "pages/aboutme/index",
+      "text": "ME"
+    }
+  ]
   },
   "networkTimeout": {
     "request": 10000,

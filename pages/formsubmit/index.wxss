@@ -1,0 +1,137 @@
+/**index.wxss**/
+.body{
+
+  border-width: 5rpx 5rpx 5rpx 5rpx;
+  border-color: #888888;
+  border-style: solid;
+  grid-row-gap: 20rpx;
+}
+.head{
+  height: 10%
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.formTextarea{
+
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  height: 100rpx;
+}
+
+.formPicker_S
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+}
+.formTextInput_S{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+}
+
+.formlabel{
+ border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  width: 50%;
+}
+
+.forminput{
+ border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  width: 50%;
+}
+
+
+.formradiogender{
+   border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid;
+  display: flex;
+  flex-direction:  row;
+  justify-content:  flex-start ;
+  width: 50%
+}
+
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.kind_list_img{
+  width : 80rpx;
+  height: 90rpx;
+  margin-right: 20rpx;
+}
+
+.exhibi_body{
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+   border-width: 2rpx 2rpx 2rpx 2rpx;
+  border-color: #888888;
+  border-style: solid
+}
+.exhibi_item{
+  display: flex;
+  flex-direction: row;
+  border-color: #888888;
+  border-style: solid;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  
+}
+.exhibi_name{
+  font-size: medium;
+  font-weight: bold;
+  border-color: #888888;
+  border-style: solid;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  height: 30rpx;
+  text-align: center;
+}
+.exhibi_dep1{
+  font-size: small;
+  border-color: #888888;
+  border-style: solid;
+   border-width: 2rpx 2rpx 2rpx 2rpx;
+   height: 30rpx;
+   
+}
+.exhibi_dep2{
+  font-size: small;
+  border-color: #888888;
+  border-style: solid;
+  border-width: 2rpx 2rpx 2rpx 2rpx;
+  height: 30rpx;
+   
+}

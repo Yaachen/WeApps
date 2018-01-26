@@ -1,0 +1,73 @@
+<!--index.wxml-->
+
+<view class="page">
+  <view class="head" />
+
+  <view class="body">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="formTextInput_S">
+        <label class='formlabel'> 联系人 </label>
+        <input class='forminput' name="input" placeholder="姓名">
+        </input>
+      </view>
+
+      <view class="formTextInput_S">
+        <label class="formlabel"> 性别 </label>
+        <!--view class ="formradiogender"-->
+        <radio-group class="formradiogender" name="formradiogr">
+          <label>
+            <radio value='man' checked='true' /> 男
+          </label>
+          <label>
+            <radio value='female' /> 女
+          </label>
+        </radio-group>
+        <!--/view-->
+      </view>
+
+      <view class="formTextInput_S">
+        <label> 手机 </label>
+        <input name="input" class="forminput" type="number" placeholder="例如： 017545124523">
+        </input>
+      </view>
+      <view class="formTextInput_S">
+        <label> 邮件 </label>
+        <input name="input" class="forminput" type="text" placeholder="例如： hallo@hotmail.com">
+        </input>
+      </view>
+      <view class="formTextarea">
+         <textarea  bindblur="bindTextAreaBlur" auto-height placeholder="行程描述" />
+      </view>
+       <view class="formPicker_S">
+          <picker name="picker" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+            <view class="weui-input">出发时间 {{date}}</view>
+          </picker>
+        </view>
+        <view class="formTextInput_S">
+          <checkbox-group name="checkG1">
+            <label>
+              有驾照
+              <checkbox value="有驾照"></checkbox>
+            </label>
+            <label>
+              拼车
+              <checkbox value="拼车"></checkbox>
+            </label>
+            <label>
+              拼房
+              <checkbox value="拼房"></checkbox>
+            </label>
+          </checkbox-group>
+        </view>
+
+        <view class="formTextInput_S">
+          <input type="inputSName" placeholder="">
+          </input>
+        </view>
+        <view class="btn-area">
+          <button formType="submit">提交</button>
+          <button formType="reset">重置</button>
+        </view>
+    </form>
+    </view>
+  </view>
